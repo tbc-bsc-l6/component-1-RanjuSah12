@@ -1,12 +1,10 @@
 <?php
 
-
 namespace awe;
 
-
-class CdProduct extends ShopProduct
+class GameProduct extends ShopProduct
 {
-    private $playLength;
+    private $rating;
 
     public function __construct(
         string $id,
@@ -14,7 +12,7 @@ class CdProduct extends ShopProduct
         string $firstName,
         string $mainName,
         float $price,
-        int $playLength,
+        int $rating,
     )
     {
         parent::__construct(
@@ -24,11 +22,10 @@ class CdProduct extends ShopProduct
             $mainName,
             $price
         );
-        $this->playLength = $playLength;
+        $this->rating = $rating;
     }
-
-    public function getPlayLength()
+    public function getpegi()
     {
-        return $this->playLength;
+        return $this->rating;
     }
 }

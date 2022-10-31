@@ -14,7 +14,7 @@ class BookProduct extends ShopProduct
         string $firstName,
         string $mainName,
         float $price,
-        int $numPages
+        int $numPages,
     )
     {
 

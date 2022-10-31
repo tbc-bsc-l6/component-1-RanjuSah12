@@ -1,20 +1,56 @@
 [
-  {
-    "id": 1,
-    "type": "book",
-    "title": "PHP Objects, Patterns and Practice",
-    "firstname": "Matt",
-    "mainname": "Zandstra",
-    "price": 44.99,
-    "numpages": 608
-  },
-  {
-    "id": 2,
-    "type": "cd",
-    "title": "Seeking Thrills",
-    "firstname": "",
-    "mainname": "Georgia",
-    "price": 8.5,
-    "playlength": 45
-  }
+    {
+        "id": 2,
+        "type": "game",
+        "title": "qwert",
+        "firstname": "test1",
+        "mainname": "",
+        "price": 1233,
+        "rating": 12
+    },
+    {
+        "id": 3,
+        "type": "book",
+        "title": "PHP Objects, Patterns and Practice",
+        "firstname": "Matt",
+        "mainname": "Zandstra",
+        "price": 44.99,
+        "numpages": 608
+    },
+    {
+        "id": 4,
+        "type": "cd",
+        "title": "Seeking Thrills",
+        "firstname": "Georgia",
+        "mainname": "",
+        "price": 8.5,
+        "playlength": 45
+    },
+    {
+        "id": 5,
+        "type": "cd",
+        "title": "Avengers",
+        "firstname": "Ranju",
+        "mainname": "",
+        "price": 500,
+        "playlength": 3
+    },
+    {
+        "id": 6,
+        "type": "book",
+        "title": "The Girl",
+        "firstname": "Reena",
+        "mainname": "Sah",
+        "price": 1000,
+        "numpages": 400
+    },
+    {
+        "id": 7,
+        "type": "game",
+        "title": "Arcade",
+        "firstname": "Kanchan",
+        "mainname": "Sah",
+        "price": 1277,
+        "rating": 20
+    }
 ]
