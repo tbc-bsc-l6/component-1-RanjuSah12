@@ -39,7 +39,7 @@ class HtmlProductWriter extends ShopProductWriter
 
         $booktable = $this->generateBookTable($bookproducts);
         $cdtable = $this->generateCdTable($cdproducts);
-        $gametable = $this->generateGameTable($gameproducts);
+        $gametable = $this->generategameTable($cdproducts);
 
         $addProduct = $this->generateAddProductForm();
 
@@ -117,6 +117,7 @@ class HtmlProductWriter extends ShopProductWriter
             </table>';
     }
 
+
     private function generateGameTable($gameproducts)
     {
         $contents = '';
@@ -124,18 +125,18 @@ class HtmlProductWriter extends ShopProductWriter
             $contents .= '<tr>
                   <td>'.$game->getFullName().'</td>'
                 .'<td>'.$game->getTitle().'</td>'
-                .'<td>'.$game->getpegi().'</td>'
+                .'<td>'.$game->getPlayLength().'</td>'
                 .'<td>'.$game->getPrice().'</td>'
                 .'<td>'.'<a href="./index.php?delete='.$game->getId().'">X</a>'.'</td>
                 </tr>';
         }
         return
             '
-            <h3>GAMES</h3>
+            <h3>Game</h3>
             <table class="paleBlueRows equal-width">
                  <thead>
                     <tr>                    
-                        <th>CONSOLE</th>
+                        <th>Console</th>
                         <th>TITLE</th>
                         <th>PEGI</th>
                         <th>PRICE</th>
@@ -147,8 +148,6 @@ class HtmlProductWriter extends ShopProductWriter
             '</tbody>
             </table>';
     }
-
-    
     private function generateAddProductForm()
     {
         return '
@@ -160,7 +159,7 @@ class HtmlProductWriter extends ShopProductWriter
                 <option value="cd">CD</option>
                 <option value="book">Book</option>
                 <option value="game">Game</option>
-                </select> 
+          </select> 
           <br />
           <br />
          <label for="name">Author / Artist:</label><br />
@@ -174,7 +173,7 @@ class HtmlProductWriter extends ShopProductWriter
            <input type="text" id="title" name="title">
            <br />
            <br />
-         <label for="pages">Pages/Duration/pegi:</label>
+         <label for="pages">Pages/Duration/Pegi:</label>
            <input type="text" id="pages" name="pages">
            <br />
            <br />
